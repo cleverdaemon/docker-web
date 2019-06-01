@@ -35,6 +35,7 @@ services:
             MYSQL_DATABASE: "${DB_NAME}"
             MYSQL_USER: "${DB_USERNAME}"
             MYSQL_PASSWORD: "${DB_PASSWORD}"
+        command: --default-authentication-plugin=mysql_native_password
 
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
