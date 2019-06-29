@@ -39,7 +39,7 @@ services:
 
   composer:
     container_name: composer
-    build: ./composer/
+    image: composer:latest
     volumes:
       - "${PROJECT_ROOT}:/var/www/html"
 
